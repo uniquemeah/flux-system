@@ -26,7 +26,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./
+  path: C:/Users/USER/OneDrive/Documents/Terraform Project/project-alt/flux-alt/workspace
   prune: true
   sourceRef:
     kind: GitRepository
