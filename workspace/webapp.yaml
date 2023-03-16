@@ -13,7 +13,7 @@ metadata:
     app: app-web
   namespace: webapp
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: app-web
@@ -49,7 +49,7 @@ metadata:
     app: mysql-db
   namespace: webapp
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mysql-db
