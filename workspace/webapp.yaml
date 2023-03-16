@@ -9,8 +9,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-web
-  labels:
-    app: app-web
   namespace: webapp
 spec:
   replicas: 1
@@ -32,9 +30,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: app-web
-labels:
-  name: app-web
-namespace: webapp
+  labels:
+    name: app-web
+  namespace: webapp
 spec:
   selector:
     app: app-web
@@ -48,8 +46,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql-db
-  labels:
-    app: mysql-db
   namespace: webapp
 spec:
   replicas: 1
@@ -75,9 +71,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql-db
-labels:
-  name: mysql-db
-namespace: webapp
+  labels:
+    name: mysql-db
+  namespace: webapp
 spec:
   selector:
     app: mysql-db
