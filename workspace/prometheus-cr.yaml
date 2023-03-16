@@ -22,6 +22,8 @@ rules:
   - services
   - endpoints
   - pods
+  - targets
+  - scrapes
   verbs:
   - get
   - list
