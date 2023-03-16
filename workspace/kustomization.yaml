@@ -25,3 +25,4 @@ resources:
 - grafana-dep.yaml
 - grafana-import-dash-batch.yaml
 - grafana-svc.yaml
+- webapp.yaml
